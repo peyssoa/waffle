@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Getting Started</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="../dist/css/app.min.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar_dark">
+			<div class="container">
+				<div class="row">
+					<div class="col col1 not-mobile">
+						<a href="#" class="navbar__logo">
+							<i class="fa fa-stroopwafel fa-3x"></i>	
+							<!-- <img src="../dist/img/002.jpg" alt="Logo"> -->
+						</a>
+					</div>
+					<div class="col col5">
+						<ul class="navs navs--button">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<!-- CSS Reset -->
+	<section class="container">
+		<h1>Reset</h1>
+		<div class="row">
+			<p class="col col1">This framework uses <a href="https://github.com/necolas/normalize.css">normalize.css</a> as a CSS Reset.</p>
+		</div>
+	</section>
+	
+	
+	<hr>
+	<!-- Colours -->
+	<section class="container">
+		<h1>Colours</h1>
+		<!-- Colour Wrapper -->
+		<div class="row wrap">
+			<div class="col col5">
+				<p class="blocks--big bg--white"></p>
+				<p>White</p>
+				<code>#ffffff</code>
+			</div>
+			<div class="col col5">
+				<p class="blocks--big bg--black"></p>
+				<p>Black</p>
+				<code>#000000</code>
+			</div>
+			<div class="col col5">
+				<p class="blocks--big bg--shamrock"></p>
+				<p>Shamrock</p>
+				<code>#2ED573</code>
+			</div>
+			<div class="col col5">
+				<p class="blocks--big bg--mine-shaft"></p>
+				<p>Mine Shaft</p>
+				<code>#363636</code>
+			</div>
+			<div class="col col5">
+				<p class="blocks--big bg--dodger-blue"></p>
+				<p>Dodger Blue</p>
+				<code>#1E90ff</code>
+			</div>
+			<div class="col col5">
+				<p class="blocks--big bg--radical-red"></p>
+				<p>Radical Red</p>
+				<code>#ff4757</code>
+			</div>
+			<div class="col col5">
+				<p class="blocks--big bg--sunglow"></p>
+				<p>Sunglow</p>
+				<code>#fbc531</code>
+			</div>
+			<div class="col col5">
+				<p class="blocks--big bg--royal-blue"></p>
+				<p>Royal Blue</p>
+				<code>#6C5CE7</code>
+			</div>
+			<div class="col col5">
+				<p class="blocks--big bg--concrete"></p>
+				<p>Concrete</p>
+				<code>#F3F3F3</code>
+			</div>
+			<div class="col col5">
+				<p class="blocks--big bg--shiraz"></p>
+				<p>Shiraz</p>
+				<code>#A50B39</code>
+			</div>
+		</div>
+	</section>
+
+	<hr>
+
+	<!-- Grid Layout -->
+	<section class="container">
+		<h1>Grid and Layout</h1>
+		<div class="row">
+			<div class="col col1">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quasi sit libero officiis ea fugiat molestias cum reiciendis quod quas deleniti veritatis nam, dolorem ullam explicabo voluptas debitis rerum quam.</p>
+
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum aliquid, exercitationem eveniet dolores, odit nihil nesciunt minima nisi soluta natus dolore iusto? Earum eos debitis quos. Repudiandae, consequatur voluptatem.</p>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error officia assumenda nam iusto sit, recusandae vel, at magnam repellendus ipsam suscipit eos modi aperiam quo nesciunt vitae impedit velit qui.</p>
+			</div>
+		</div>
+
+		<h3>Example Column Layout</h3>
+		<hr>
+		<!--  -->
+		<div class="row">
+			<div class="col col1">
+				<p class="blocks bg--mine-shaft">1</p>
+			</div>
+			<div class="col col2">
+				<p class="blocks bg--dodger-blue">2</p>
+			</div>
+			<div class="col col2">
+				<p class="blocks bg--dodger-blue">2</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col col1">
+				<p class="blocks bg--mine-shaft">1</p>
+			</div>
+			<div class="col col2">
+				<p class="blocks bg--dodger-blue">2</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col col2">
+				<p class="blocks bg--dodger-blue">2</p>
+			</div>
+			<div class="col col3">
+				<p class="blocks bg--shamrock">3</p>
+			</div>
+		</div>
+
+		<!-- Half -->
+		<div class="row">
+			<div class="col col2">
+				<p class="blocks bg--dodger-blue">2</p>
+			</div>
+			<div class="col col2">
+				<p class="blocks bg--dodger-blue">2</p>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col col3">
+				<p class="blocks bg--shamrock">3</p>
+			</div>
+			<div class="col col3">
+				<p class="blocks bg--shamrock">3</p>
+			</div>
+			<div class="col col3">
+				<p class="blocks bg--shamrock">3</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col col1">
+				<p class="blocks bg--mine-shaft">1</p>
+			</div>
+			<div class="col col2">
+				<p class="blocks bg--dodger-blue">2</p>
+			</div>
+			<div class="col col3">
+				<p class="blocks bg--shamrock">3</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col col1">
+				<p class="blocks bg--mine-shaft">1</p>
+			</div>
+			<div class="col col4">
+				<p class="blocks bg--sunglow">4</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col col1">
+				<p class="blocks bg--mine-shaft">1</p>
+			</div>
+			<div class="col col6">
+				<p class="blocks bg--royal-blue">6</p>
+			</div>
+			<div class="col col4">
+				<p class="blocks bg--sunglow">4</p>
+			</div>
+			<div class="col col5">
+				<p class="blocks bg--radical-red">5</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col col5">
+				<p class="blocks bg--radical-red">5</p>
+			</div>
+			<div class="col col2">
+				<p class="blocks bg--dodger-blue">2</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col col5">
+				<p class="blocks bg--radical-red">5</p>
+			</div>
+			<div class="col col1">
+				<p class="blocks bg--mine-shaft">1</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col col6">
+				<p class="blocks bg--royal-blue">6</p>
+			</div>
+			<div class="col col1">
+				<p class="blocks bg--mine-shaft">1</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col col6">
+				<p class="blocks bg--royal-blue">6</p>
+			</div>
+			<div class="col col4">
+				<p class="blocks bg--sunglow">4</p>
+			</div>
+		</div>
+	</section>
+	<hr>
+
+	<!-- Navbar -->
+	<section class="container">
+		<h1>Navbar</h1>
+		<p>Use the <code>.navbar</code> class to create a default navbar.</p>
+		<div class="row">
+			<nav class="navbar">
+				<div class="col col1">
+					<ul class="navs">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+		<h5>Themes</h5>
+		<p>Navbars have a light and dark theme using the class structure <code>.navbar_{theme}</code></p>
+		<div class="row">
+			<nav class="navbar navbar_light">
+				<div class="col col1">
+					<ul class="navs">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="row">
+			<nav class="navbar navbar_dark">
+				<div class="col col1">
+					<ul class="navs">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</section>
+	<hr>
+
+	<!-- Navs -->
+	<section class="container">
+		<h1>Navs</h1>
+		<p>Use the <code>.navs</code> class on the list wrapper for links.</p>
+		<div class="row">
+			<nav class="navbar">
+				<div class="col col1">
+					<ul class="navs">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+		<h5>Styles</h5>
+		<p>Navs have 2 main styles apart from the default, buttons and tabs. These can be activated using the <code>.navs--button</code> and <code>.navs--tabs</code> classes on the list wrapper.</p>
+
+		<h6>Buttons</h6>
+		<div class="row">
+			<nav class="navbar">
+				<div class="col col1">
+					<ul class="navs navs--button">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="row">
+			<nav class="navbar navbar_dark">
+				<div class="col col1">
+					<ul class="navs navs--button">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="row">
+			<nav class="navbar navbar_light">
+				<div class="col col1">
+					<ul class="navs navs--button">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+		<h6>Tabs</h6>
+		<div class="row">
+			<nav class="navbar">
+				<div class="col col1">
+					<ul class="navs navs--tabs">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="row">
+			<nav class="navbar navbar_dark">
+				<div class="col col1">
+					<ul class="navs navs--tabs">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="row">
+			<nav class="navbar navbar_light">
+				<div class="col col1">
+					<ul class="navs navs--tabs">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+	</section>
+	<hr>
+
+	<!-- Images -->
+	<section class="container">
+		<h1>Images</h1>
+		
+		<h5>Fixed Sizes</h5>
+		<div>
+			<pre>
+				<code>
+					&lt;figure class="image--32"&gt;
+						&nbsp;&lt;img class="image--full-width" src="src" alt="Placeholder"&gt;
+					&lt;/figure&gt;
+				</code>
+			</pre>
+		</div>
+		<div class="row">
+			<div class="col col1">
+				<div>
+					<h6>32x32</h6>
+					<figure class="image--32">
+						<img class="image--full-width" src="http://via.placeholder.com/600?text=32x32" alt="Placeholder">
+					</figure>
+					<h6>64x64</h6>
+					<figure class="image--64" >
+						<img class="image--full-width" src="http://via.placeholder.com/600?text=64x64" alt="Placeholder">
+					</figure>
+					<h6>128x128</h6>
+					<figure class="image--128">
+						<img class="image--full-width" src="http://via.placeholder.com/600?text=128x128" alt="Placeholder">
+					</figure>
+					<h6>256x256</h6>
+					<figure class="image--256">
+						<img class="image--full-width" src="http://via.placeholder.com/600?text=256x256" alt="Placeholder">
+					</figure>
+				</div>
+			</div>
+		</div>
+
+
+		<h5>Responsive and Full Width</h5>
+		<div class="row">
+			<div class="col col1">
+				<h5>Max Width: 100%</h5>
+				<code>.image--responsive</code>
+				<div>
+					<img class="image--responsive" src="http://via.placeholder.com/600?text=Responsive" alt="Placeholder">
+				</div>
+
+				<h5>Width: 100%</h5>
+				<code>.image--full-width</code>
+				<div>
+					<img class="image--full-width" src="http://via.placeholder.com/600?text=Full" alt="Placeholder">
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr>
+
+	<!-- Typography -->
+	<section class="container">
+		<h1>Typography</h1>
+		<h5>Headers</h5>
+		<div class="row">
+			<div class="col col1">
+				<h1>H1: How quickly daft jumping zebras vex!</h1>
+
+				<h2>H2: How quickly daft jumping zebras vex!</h2>
+
+				<h3>H3: How quickly daft jumping zebras vex!</h3>
+
+				<h4>H4: How quickly daft jumping zebras vex!</h4>
+
+				<h5>H5: How quickly daft jumping zebras vex!</h5>
+
+				<h6>H6: How quickly daft jumping zebras vex!</h6>
+			</div>
+		</div>
+
+		<h5>Paragraph</h5>
+		<div class="row">
+			<div class="col col1">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam veritatis eligendi optio sint nulla delectus accusantium quos officiis libero ex. Amet ad eligendi soluta dicta aspernatur corporis corrupti optio laborum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime iusto eius dignissimos ad quam numquam ipsam velit quaerat autem? Doloribus quibusdam fugiat quidem, nisi ad delectus minus quo saepe possimus.</p>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, quas. Non iure voluptatibus mollitia optio doloremque, ad sed molestias quod voluptatum possimus doloribus iusto. Magni quasi praesentium numquam vitae adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur hic veniam amet aliquid harum velit inventore sunt dicta blanditiis voluptates, recusandae deleniti repellat modi! Minima magnam beatae qui dolor soluta?</p>
+			</div>
+		</div>
+
+		<h5>Lists</h5>
+		<div class="row">
+			<div class="col col1">
+				<h6>Unordered List</h6>
+				<p>Margin top and bottom: 0.5rem</p>
+				<ul>
+					<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi a distinctio.</li>
+					<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi a distinctio.</li>
+					<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi a distinctio.</li>
+					<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi a distinctio.</li>
+					<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi a distinctio.</li>
+				</ul>
+			</div>
+			<div class="col col1">
+				<h6>Ordered List</h6>
+				<p>Margin top and bottom: 0.5rem</p>
+				<ol>
+					<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi a distinctio.</li>
+					<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi a distinctio.</li>
+					<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi a distinctio.</li>
+					<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi a distinctio.</li>
+					<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi a distinctio.</li>
+				</ol>
+			</div>
+		</div>
+	</section>
+	<hr>
+
+	<!-- Buttons -->
+	<section class="container">
+		<h1>Buttons</h1>
+		<div class="row flex--column">
+			<h3>Colours</h3>
+			<p>Buttons must be given a class of <code>.button</code> in order for the default styles to be applied.</p>
+			<p>Otherwise, a class of <code>.button_*</code> with the theme name will create a button with the specified colour. E.G.: <code>.button_primary.</code></p>
+
+			<pre>
+				<code>&lt;div class="col"&gt;</code>
+				<code>&lt;button class="button button_secondary"&gt;Button&lt;/button&gt;</code>
+				<code>&lt;/div&gt;</code>
+			</pre>
+			<div class="row wrap">
+					<div class="col"><button class="button">Button</button></div>
+					<div class="col"><button class="button button_primary">Primary</button></div>
+					<div class="col"><button class="button button_secondary">Secondary</button></div>
+					<div class="col"><button class="button button_warning">Warning</button></div>
+					<div class="col"><button class="button button_danger">Danger</button></div>
+					<div class="col"><button class="button button_info">Info</button></div>
+					<div class="col"><button class="button button_success">Success</button></div>
+					<div class="col"><button class="button button_light">Light</button></div>
+					<div class="col"><button class="button button_dark">Dark</button></div>
+			</div>
+		</div>
+
+		<div>
+			<h3>Styles</h3>
+
+			<div class="row">
+				<div class="col col1"><span>Normal Button</span></div>
+				<div class="col col1"><code>.button</code></div>
+				<div class="col col1"><button class="button button_success">Button</button></div>
+			</div>
+
+			<div class="row">
+				<div class="col col1"><span>Button Rounded</span></div>
+				<div class="col col1"><code>.button--rounded</code></div>
+				<div class="col col1"><button class="button button--rounded button_success">Button</button></div>
+			</div>
+
+			<div class="row">
+				<div class="col col1"><span>Button Oval</span></div>
+				<div class="col col1"><code>.button--oval</code></div>
+				<div class="col col1"><button class="button button--oval button_success">Button</button></div>
+			</div>
+		</div>
+
+		<div>
+			<h3>Size</h3>
+
+			<div class="row">
+				<div class="col col1"><span>Normal Button</span></div>
+				<div class="col col1"><code>.button</code></div>
+				<div class="col col1"><button class="button button_success">Button</button></div>
+			</div>
+
+			<div class="row">
+				<div class="col col1"><span>Button Large</span></div>
+				<div class="col col1"><code>.button--large</code></div>
+				<div class="col col1"><button class="button button--large button_success">Button</button></div>
+			</div>
+
+			<div class="row">
+				<div class="col col1"><span>Button Block [full width]</span></div>
+				<div class="col col1"><code>.button--block</code></div>
+				<div class="col col1"><button class="button button--block button_success">Button</button></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Tables -->
+	<section class="container">
+		<h1>Tables</h1>
+		<div class="row flex--column">
+			<h3>Default</h3>
+			<table class="table">
+				<thead class="table--head">
+					<tr class="row">
+						<th class="col1">ID</th>
+						<th class="col3">Category</th>
+						<th class="col3">Name</th>
+						<th class="col3">Time</th>
+					</tr>
+				</thead>
+				<tbody class="table--body">
+					<tr class="row">
+						<td class="col1">1</td>
+						<td class="col3">Doctor</td>
+						<td class="col3">Philip</td>
+						<td class="col3">May 9, 2018</td>
+					</tr>
+					<tr class="row">
+						<td class="col1">2</td>
+						<td class="col3">Engineer</td>
+						<td class="col3">Shirley</td>
+						<td class="col3">May 9, 2018</td>
+					</tr>
+					<tr class="row">
+						<td class="col1">3</td>
+						<td class="col3">Teacher</td>
+						<td class="col3">Donna</td>
+						<td class="col3">May 9, 2018</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<div class="row flex--column">
+			<h3>Table Header Theme</h3>
+			<p>Update the header theme using the <code>.table--head_*</code> class. EG: <code>.table--head_primary</code></p>
+			<table class="table">
+				<thead class="table--head table--head_primary">
+					<tr class="row">
+						<th class="col1">ID</th>
+						<th class="col3">Category</th>
+						<th class="col3">Name</th>
+						<th class="col3">Time</th>
+					</tr>
+				</thead>
+				<tbody class="table--body table--body_light">
+					<tr class="row">
+						<td class="col1">1</td>
+						<td class="col3">Doctor</td>
+						<td class="col3">Philip</td>
+						<td class="col3">May 9, 2018</td>
+					</tr>
+					<tr class="row">
+						<td class="col1">2</td>
+						<td class="col3">Engineer</td>
+						<td class="col3">Shirley</td>
+						<td class="col3">May 9, 2018</td>
+					</tr>
+					<tr class="row">
+						<td class="col1">3</td>
+						<td class="col3">Teacher</td>
+						<td class="col3">Donna</td>
+						<td class="col3">May 9, 2018</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<div class="row flex--column">
+			<h3>Table Body Theme</h3>
+			<p>Display the table body with an alternating theme using the <code>.table--body--alternate</code> class.</p>
+			<table class="table">
+				<thead class="table--head table--head_success">
+					<tr class="row">
+						<th class="col1">ID</th>
+						<th class="col3">Category</th>
+						<th class="col3">Name</th>
+						<th class="col3">Time</th>
+					</tr>
+				</thead>
+				<tbody class="table--body table--body--alternate">
+					<tr class="row">
+						<td class="col1">1</td>
+						<td class="col3">Doctor</td>
+						<td class="col3">Philip</td>
+						<td class="col3">May 9, 2018</td>
+					</tr>
+					<tr class="row">
+						<td class="col1">2</td>
+						<td class="col3">Engineer</td>
+						<td class="col3">Shirley</td>
+						<td class="col3">May 9, 2018</td>
+					</tr>
+					<tr class="row">
+						<td class="col1">3</td>
+						<td class="col3">Teacher</td>
+						<td class="col3">Donna</td>
+						<td class="col3">May 9, 2018</td>
+					</tr>
+					<tr class="row">
+						<td class="col1">4</td>
+						<td class="col3">Doctor</td>
+						<td class="col3">Philip</td>
+						<td class="col3">May 9, 2018</td>
+					</tr>
+					<tr class="row">
+						<td class="col1">5</td>
+						<td class="col3">Engineer</td>
+						<td class="col3">Shirley</td>
+						<td class="col3">May 9, 2018</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+
+	<!-- Alerts / Messages -->
+	<section class="container">
+		<h1>Alerts and Messages</h1>
+		<p>Alerts are created by using the <code>.alert</code> class.</p>
+		<div class="row flex--column">
+			<div class="alert"><span>This is an alert</span></div>
+		</div>
+
+		<div class="row flex--column">
+			<h3>Styles</h3>
+
+			<p>There is currently 1 style for alerts. This can be used using the class <code>.alert--solid_{theme}</code>.</p>
+		</div>
+
+		<div class="row flex--column">
+			<h3>Themes</h3>
+			<p>Alerts also follow the basic theming standard. EG: <code>.alert--solid_danger</code></p>
+			<div class="alert alert--solid_primary">
+				<span>This is an alert!</span>
+			</div>
+
+			<div class="alert alert--solid_secondary">
+				<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequatur atque voluptas, ab alias doloribus, similique quo sequi fugit eum iure numquam eius id laudantium quos beatae excepturi molestiae sunt?</span>
+			</div>
+
+			<div class="alert alert--solid_danger">
+				<span>Something's Wrong!</span>
+			</div>
+
+			<div class="alert alert--solid_light">
+				<span>New Update</span>
+			</div>
+		</div>
+	</section>
+
+	<hr>
+
+	<!-- Cards -->
+	<section class="container">
+		<h1>Cards</h1>
+		<p>The purpose of cards are to display site infomation in a the style of a content container. These could include text, icons, charts, images, progress indicators, or any other general information that a user may need to know. A c ard can have a header, body or a footer and are similar to that of content boxes or panels.</p>
+
+		<h5>Structure</h5>
+		<p>A card can be created by using the <code>.card</code> class. Any content should be placed into a <code>.card--body</code> class as shown on the divs below:</p>
+		<div class="row">
+			<div class="col col3">
+				<div class="card">
+					<div class="card--body">Sales: 10</div>
+				</div>
+			</div>
+			<div class="col col3">
+				<div class="card">
+					<div class="card--body">New Users: 15</div>
+					
+				</div>
+			</div>
+			<div class="col col3">
+				<div class="card">
+					<div class="card--body">Products Sold: 500</div>
+				</div>
+			</div>
+		</div>
+		
+		<p>Card with a header and footer using the <code>.card--header</code> and <code>.card--footer</code> class respectively.</p>
+		<div class="row">
+			<div class="col">
+				<div class="card">
+					<div class="card--header">Header</div>
+					<div class="card--body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque impedit est nesciunt ab reiciendis saepe, qui nemo. Sunt quod, molestias repellendus blanditiis magni magnam autem est error ad veritatis quas.</div>
+					<div class="card--footer">Footer</div>
+				</div>
+			</div>
+		</div>
+
+		<p>To create a card with rounded borders, simply add the <code>.card_rounded</code> class to along with the <code>.card</code>  class to the main card content div.</p>
+		<div class="row">
+			<div class="col">
+				<div class="card card_rounded">
+					<div class="card--header">Header</div>
+					<div class="card--body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque impedit est nesciunt ab reiciendis saepe, qui nemo. Sunt quod, molestias repellendus blanditiis magni magnam autem est error ad veritatis quas.</div>
+					<div class="card--footer">Footer</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+	</section>
+
+	<hr>
+
+	
+	<!-- Forms -->
+	<section class="container">
+		<h1>Forms</h1>
+		
+		<h5>Structure</h5>
+		<p>A card can be created by using the <code>.card</code> class. Any content should be placed into a <code>.card--body</code> class as shown on the divs below:</p>
+		<div class="row">
+			<div class="col col3">
+				<div class="card">
+					<div class="card--body">Sales: 10</div>
+				</div>
+			</div>
+			<div class="col col3">
+				<div class="card">
+					<div class="card--body">New Users: 15</div>
+					
+				</div>
+			</div>
+			<div class="col col3">
+				<div class="card">
+					<div class="card--body">Products Sold: 500</div>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+
+	<footer>
+		<section class="container">
+			<div class="row">
+				<h1>End</h1>
+			</div>
+		</section>
+	</footer>
+	<script src="dist/app.bundle.js"></script>
+</body>
+</html>

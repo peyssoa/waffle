@@ -1,0 +1,33 @@
+.card{
+    background-color: $white;
+    margin: 10px 0;
+    font-size: 0.95em;
+    background-color: $white;
+    border: 1px solid darken($concrete, 3%);
+
+    &_rounded{
+        border-radius: $default-radius;
+    }
+
+    &--header, &--body, &--footer{
+        padding:  .75em 1.25em;
+    }
+
+    &--header, &--footer{
+        color: $black;
+    }
+
+    &--header{
+        background-color: $concrete;
+        border-bottom: 1px solid darken($concrete, 3%);
+    }
+
+    &--body{
+        font-size: 0.975em;
+        line-height: 1.5rem;
+    }
+
+    &--footer{
+        border-top: 1px solid $concrete;
+    }
+}

@@ -1,0 +1,47 @@
+/** 
+ * @Author: Christiane Celeste 
+ * @Date: 2018-03-31 09:22:27 
+ * @Desc: Buttons 
+ */
+
+.button{
+    font-weight: $regular;
+    letter-spacing: 1px;
+    padding: 10px 45px;
+    border-radius: $sharp-radius;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+    @include trans(0.2s ease-in-out);
+    @include button-component-theme;
+
+    &:focus {outline:0;}
+}
+
+.button--block{
+    width: 100%;
+    display: block;
+}
+
+.button--large{
+    padding: 20px 45px;
+}
+
+.button--rounded{
+    border-radius: $default-radius;
+}
+
+.button--oval{
+    border-radius: $oval-radius;
+}
+
+
+
+.btn-green a, .btn-red a, .btn-yellow a, .btn-blue a{
+    color: white !important;
+}
+
+.btn-basic a{
+    color: #333 !important;
+    text-decoration: none;
+}

@@ -1,0 +1,73 @@
+/** 
+ * @Author: Christiane Celeste 
+ * @Date: 2018-05-17
+ * @Desc:  Tables
+ */
+
+.table{
+    border-collapse: collapse;
+    width: 100%;
+    color: $mine-shaft;
+
+
+    .table--head{
+        @include component-theme;
+
+        th{
+            border-bottom: 1px solid $mine-shaft;
+            border-top: none;
+        }
+    }
+
+    .table--body{
+        &--alternate{
+            tr{
+                &:nth-of-type(2n+0) {
+                    background-color: darken($concrete, 10%);
+                    border-color: darken($concrete, 20%);
+                }
+            }
+            
+        }
+        tr{
+            text-align: center;
+            &:hover{
+                background-color: darken($white, 5%);
+            }
+
+        }
+    }
+
+}
+
+// Media Queries
+@include update-screen(tiny-screens){
+    .table{
+        td, th{
+            border-top: none;
+            border-bottom: none;
+            padding: 5px 0px;
+        }
+
+        tr{
+            border: 1px solid darken($concrete, 15%);
+        }
+    }
+    
+}
+@include update-screen(small-screens){}
+@include update-screen(medium-screens){
+    .table{
+        td, th{
+            border-top: 1px solid darken($concrete, 15%);
+            border-bottom: 1px solid darken($concrete, 15%);
+            padding: 15px 5px;
+        }
+
+        tr{
+            border: none;
+        }
+    }
+}
+@include update-screen(large-screens){}
+@include update-screen(wide-screens){}

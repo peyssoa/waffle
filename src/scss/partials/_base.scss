@@ -1,0 +1,139 @@
+/** 
+ * @Author: Christiane Celeste 
+ * @Date: 2018-04-08 15:59:43 
+ * @Desc: All mixins an global variables to be used throughout the system 
+ */
+
+// Tiny:   From 320px. Older Iphones and Android devices.
+// Small:  From 370px - around 450. Modern Mobile screens.
+// Medium: Tablets and Smaller laptops
+// Large:  Desktops and larger laptops
+// Wide:   Large Desktop/TV Screens
+@mixin update-screen($media){
+    @if $media == tiny-screens {
+        @media only screen and (min-width: 320px) { @content; }
+    }
+    @else if $media == small-screens {
+        @media only screen and (min-width: 370px) and (max-width: 1024px) { @content; }
+    }
+    @else if $media == medium-screens {
+        @media only screen and (min-width: 768px) { @content; }
+    }
+    @else if $media == large-screens {
+        @media only screen and (min-width: 1024px) { @content; }
+    }
+    @else if $media == wide-screens {
+        @media only screen and (min-width: 1824px) { @content; }
+    }
+}
+
+// Transition taking multiple values that are 
+// compatible across most browsers
+@mixin trans($val...) {
+    -webkit-transition: $val;
+    -moz-transition: $val; 
+    -o-transition: $val; 
+    transition: $val; 
+}
+
+// Generic Component Theme
+@mixin component-theme{
+    @each $theme, $colour in $themes {
+        &_#{$theme}{
+            background-color: $colour;
+            border: 1px solid darken($colour, 20%);
+
+            @if $theme == 'light'{
+                color: $mine-shaft;
+                a{color: $mine-shaft;}
+            } @else{
+                color: $white;
+                a{color:$white;}
+            }
+        }
+    }
+}
+
+// Button theme
+@mixin button-component-theme{
+    @each $theme, $colour in $themes {
+        &_#{$theme}{
+            background-color: $colour;
+            border: 1px solid darken($colour, 20%);
+
+            @if $theme == 'light'{
+                color: $mine-shaft;
+            } @else{
+                color: $white;
+            }
+
+            &:hover {
+                background-color: darken($colour, 12%);
+            }
+            &:active {
+            background-color: darken($colour, 20%);
+            }
+        }
+    }
+}
+
+
+// Adding a background-color using the main colours
+.bg--white{
+    background-color: $white;
+    border: 1px solid darken($white, 20%);
+    color: $mine-shaft;
+}
+
+.bg--black{
+    background-color: $black;
+    border: 1px solid darken($black, 20%);
+    color: $white;
+}
+
+.bg--mine-shaft{
+    background-color: $mine-shaft;
+    border: 1px solid darken($mine-shaft, 20%);
+    color: $white;
+}
+
+.bg--dodger-blue{
+    background-color: $dodger-blue;
+    border: 1px solid darken($dodger-blue, 20%);
+    color: $white;
+}
+.bg--shamrock{
+    background-color: $shamrock;
+    border: 1px solid darken($shamrock, 20%);
+    color: $white;
+}
+
+.bg--radical-red{
+    background-color: $radical-red;
+    border: 1px solid darken($radical-red, 20%);
+    color: $white;
+}
+
+.bg--sunglow{
+    background-color: $sunglow;
+    border: 1px solid darken($sunglow, 20%);
+    color: $white;
+}
+
+.bg--royal-blue{
+    background-color: $royal-blue;
+    border: 1px solid darken($royal-blue, 20%);
+    color: $white;
+}
+
+.bg--concrete{
+    background-color: $concrete;
+    border: 1px solid darken($concrete, 20%);
+    color: $mine-shaft;
+}
+
+.bg--shiraz{
+    background-color: $shiraz;
+    border: 1px solid darken($shiraz, 20%);
+    color: $white;
+}

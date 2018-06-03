@@ -1,0 +1,21 @@
+.alert{
+    margin: 5px 0;
+    text-align: center;
+    border-radius: $default-radius;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid darken($concrete, 10%);
+    
+    &--solid{
+        @include component-theme;
+    }
+
+    &--coded{
+        // TODO: Build in a coded style for alerts
+        // make bg white and the right border a theme colour
+        // make this a mixin: where it takes the border attribute and create the theme styles
+    }
+
+}

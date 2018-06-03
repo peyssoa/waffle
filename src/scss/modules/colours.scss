@@ -1,0 +1,33 @@
+/** 
+* @Author: Christiane Celeste 
+* @Date: 2018-03-31 09:19:39 
+* @Desc: Colour pallette 
+*/
+
+$white: #ffffff;
+$black: #000000;
+$shamrock: #2ED573;
+$mine-shaft: #363636;
+$dodger-blue: #1E90FF;
+$radical-red: #FF4757;
+$sunglow: #FBC531;
+$royal-blue: #6C5CE7;
+$concrete: #F3F3F3;
+$shark: #272A32;
+$supernova: #FFCA00;
+$shiraz: #A50B39;
+
+// If concrete doesnt cut it
+$wild-sand: #F4F4F4;
+
+// Map of colour themes that can be used throughout the system
+$themes: (
+  primary: $dodger-blue,
+  secondary: lighten($mine-shaft, 20%),
+  warning: $sunglow,
+  danger: $radical-red,
+  success: $shamrock,
+  info: $royal-blue,
+  light: $concrete,
+  dark: $mine-shaft,
+);

@@ -1,0 +1,47 @@
+/** 
+ * @Author: Christiane Celeste 
+ * @Date: 2018-04-10 18:38:32 
+ * @Desc: Images 
+ */
+
+.image{
+
+    &--responsive{max-width: 100%;}
+    // Image Layout
+    &--full-width{width: 100%;}
+
+    // Image Sizes
+    &--32{
+        height: 32px;
+        width: 32px;
+    }
+
+    &--64{
+        height: 64px;
+        width: 64px;
+    }
+
+    &--128{
+        height: 128px;
+        width: 128px;
+    }
+
+    &--256{
+        height: 256px;
+        width: 256px;
+    }
+
+    // Image Templates
+    &__thumb{
+        border: 1px solid $white;
+    }
+
+    &__rounded{
+        border-radius: $default-radius;
+    }
+
+    &__circle{
+        border-radius: 50%;
+    }
+    
+}

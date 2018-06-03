@@ -1,0 +1,82 @@
+/** 
+ * @Author: Christiane Celeste 
+ * @Date: 2017-10-16 
+ * @Desc:  
+ */
+
+//  Media Queries
+@include update-screen(tiny-screens){
+    .container{width: 300px;}
+    .row{flex-direction: column;}
+    .row .col{padding: 0.5em;}
+    .not-mobile{display: none;}
+}
+
+@include update-screen(small-screens){
+    .container{width: 360px;}
+}
+
+@include update-screen(medium-screens){
+    .container{width: 684px;}
+    .row{flex-direction: row;}
+    .row .col{padding: 0.75em;}
+    .not-mobile{display: inline !important;}
+}
+
+@include update-screen(large-screens){
+    .container{width: 960px;}
+}
+
+@include update-screen(wide-screens){
+    .container{width: 1344px;}
+}
+
+.container{margin: 0 auto;}
+
+.row{
+	display: flex;
+    
+    .col1{
+        flex: 1;
+    }
+    .col2{
+        flex: 2;
+    }
+    .col3{
+        flex: 3;
+    }
+    .col4{
+        flex: 4;
+    }
+    .col5{
+        flex: 5;
+    }
+    .col6{
+        flex: 6;
+    }
+}
+
+// Make the flex box flow in columns
+.flex--column{flex-direction: column;}
+
+.wrap{
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    .col1{flex-basis: 100%; flex-grow:0;}
+    .col2{flex-basis: 46%;flex-grow:0;}
+    .col3{flex-basis: 29%;flex-grow:0;}
+    .col4{flex-basis: 20%;flex-grow:0;}
+    .col5{flex-basis: 16.444%;flex-grow:0;}
+    .col6{flex-basis: 13%;flex-grow:0;}
+}
+
+.nowrap{
+	-webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.row-center{
+	justify-content: center;
+}
+

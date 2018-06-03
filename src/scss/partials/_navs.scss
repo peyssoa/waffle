@@ -1,0 +1,72 @@
+/** 
+ * @Author: Christiane Celeste 
+ * @Date: 2017-10-16
+ */
+
+ @include update-screen(tiny-screens){
+	 .navs{
+		 justify-content: center;
+	 }
+ }
+
+ @include update-screen(small-screens){}
+
+ @include update-screen(medium-screens){
+	//  .navs{
+	// 	 justify-content: flex-end;
+	//  }
+ }
+
+ @include update-screen(large-screens){}
+
+ @include update-screen(wide-screens){}
+
+ .navs{
+	margin: 0;
+	padding: 0.275em;
+	display: flex;
+
+	li{
+		display: inline-block;
+		list-style: none;
+		padding: 10px;
+		cursor: pointer;
+
+		a{
+			text-decoration: none;
+		}
+	}
+
+	&--button{
+		li{
+			border-radius: $default-radius;
+			border: 1px solid darken($concrete, 15%);
+			margin: 0 10px;
+			
+		}
+
+		&:hover{
+
+		}
+		
+	}
+
+	&--tabs{
+		li{
+			text-transform: uppercase;
+			box-sizing: border-box;
+			border-bottom: 2px solid transparent;
+
+			&:hover{
+				a{color: lighten($mine-shaft, 30%);}
+				border-bottom: 2px solid lighten($mine-shaft, 20%);
+				transition-timing-function: ease-in-out;
+				transition: 0.45s;
+				
+			}
+		}
+
+		
+	}
+}
+

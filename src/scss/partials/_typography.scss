@@ -1,0 +1,48 @@
+/** 
+ * @Author: Christiane Celeste 
+ * @Date: 2017-10-16 
+ * @Desc:  
+ */
+ 
+ body{
+	 font-family: $open-sans;
+	 font-size: 18px;
+ }
+
+.align--center{
+	text-align: center;
+}
+
+.align--justify{
+	text-align: justify;
+}
+
+.align--left{
+	text-align: left;
+}
+
+.align--right{
+	text-align: right;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $mine-shaft;
+	font-family: $raleway;
+	font-weight: $semi-bold;
+	margin-bottom: .5rem;
+	margin-top: 1.2rem;
+}
+
+h1{font-size: 2.45em;}
+h2{font-size: 2.2em;}
+h3{font-size: 1.8em;}
+h4{font-size: 1.6em;}
+h5{font-size: 1.45em;}
+h6{font-size: 1.15em;}
+
+p{
+	font-size: 1em;
+    margin: 0rem 0 0.95em;
+}
+
+ul, ol{margin: .5rem 0;}

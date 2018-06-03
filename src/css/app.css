@@ -1,0 +1,921 @@
+/** 
+ * @Author: Christiane Celeste 
+ * @Date: 2018-03-30 23:30:08 
+ * @Desc: Main page where all sass files will come together 
+ */
+/** 
+ * @Author: Christiane Celeste 
+ * @Date: 2017-10-16
+ * @Desc: Normalize CSS Reset to start with a blank slate
+ */
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:400,600");
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+/** 
+* @Author: Christiane Celeste 
+* @Date: 2018-03-31 09:19:39 
+* @Desc: Colour pallette 
+*/
+/** 
+ * @Author: Christiane Celeste 
+ * @Date: 2018-03-31 10:41:26 
+ * @Desc: Fonts 
+ */
+/** 
+ * @Author: Christiane Celeste 
+ * @Date: 2018-04-08 15:59:43 
+ * @Desc: All mixins an global variables to be used throughout the system 
+ */
+.bg--white {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  color: #363636; }
+
+.bg--black {
+  background-color: #000000;
+  border: 1px solid black;
+  color: #ffffff; }
+
+.bg--mine-shaft {
+  background-color: #363636;
+  border: 1px solid #030303;
+  color: #ffffff; }
+
+.bg--dodger-blue {
+  background-color: #1E90FF;
+  border: 1px solid #005db7;
+  color: #ffffff; }
+
+.bg--shamrock {
+  background-color: #2ED573;
+  border: 1px solid #1a8345;
+  color: #ffffff; }
+
+.bg--radical-red {
+  background-color: #FF4757;
+  border: 1px solid #e00013;
+  color: #ffffff; }
+
+.bg--sunglow {
+  background-color: #FBC531;
+  border: 1px solid #c28f04;
+  color: #ffffff; }
+
+.bg--royal-blue {
+  background-color: #6C5CE7;
+  border: 1px solid #2f1cc1;
+  color: #ffffff; }
+
+.bg--concrete {
+  background-color: #F3F3F3;
+  border: 1px solid silver;
+  color: #363636; }
+
+.bg--shiraz {
+  background-color: #A50B39;
+  border: 1px solid #450518;
+  color: #ffffff; }
+
+/** 
+ * @Author: Christiane Celeste 
+ * @Date: 2017-10-16 
+ * @Desc:  
+ */
+@media only screen and (min-width: 320px) {
+  .container {
+    width: 300px; }
+  .row {
+    flex-direction: column; }
+  .row .col {
+    padding: 0.5em; }
+  .not-mobile {
+    display: none; } }
+
+@media only screen and (min-width: 370px) and (max-width: 1024px) {
+  .container {
+    width: 360px; } }
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 684px; }
+  .row {
+    flex-direction: row; }
+  .row .col {
+    padding: 0.75em; }
+  .not-mobile {
+    display: inline !important; } }
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 960px; } }
+
+@media only screen and (min-width: 1824px) {
+  .container {
+    width: 1344px; } }
+
+.container {
+  margin: 0 auto; }
+
+.row {
+  display: flex; }
+  .row .col1 {
+    flex: 1; }
+  .row .col2 {
+    flex: 2; }
+  .row .col3 {
+    flex: 3; }
+  .row .col4 {
+    flex: 4; }
+  .row .col5 {
+    flex: 5; }
+  .row .col6 {
+    flex: 6; }
+
+.flex--column {
+  flex-direction: column; }
+
+.wrap {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .wrap .col1 {
+    flex-basis: 100%;
+    flex-grow: 0; }
+  .wrap .col2 {
+    flex-basis: 46%;
+    flex-grow: 0; }
+  .wrap .col3 {
+    flex-basis: 29%;
+    flex-grow: 0; }
+  .wrap .col4 {
+    flex-basis: 20%;
+    flex-grow: 0; }
+  .wrap .col5 {
+    flex-basis: 16.444%;
+    flex-grow: 0; }
+  .wrap .col6 {
+    flex-basis: 13%;
+    flex-grow: 0; }
+
+.nowrap {
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap; }
+
+.row-center {
+  justify-content: center; }
+
+/** 
+ * @Author: Christiane Celeste 
+ * @Date: 2017-10-16 
+ * @Desc:  
+ */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px; }
+
+.align--center {
+  text-align: center; }
+
+.align--justify {
+  text-align: justify; }
+
+.align--left {
+  text-align: left; }
+
+.align--right {
+  text-align: right; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #363636;
+  font-family: "Raleway", serif;
+  font-weight: 600;
+  margin-bottom: .5rem;
+  margin-top: 1.2rem; }
+
+h1 {
+  font-size: 2.45em; }
+
+h2 {
+  font-size: 2.2em; }
+
+h3 {
+  font-size: 1.8em; }
+
+h4 {
+  font-size: 1.6em; }
+
+h5 {
+  font-size: 1.45em; }
+
+h6 {
+  font-size: 1.15em; }
+
+p {
+  font-size: 1em;
+  margin: 0rem 0 0.95em; }
+
+ul, ol {
+  margin: .5rem 0; }
+
+/** 
+ * @Author: Christiane Celeste 
+ * @Date: 2018-03-31 09:22:27 
+ * @Desc: Buttons 
+ */
+.button {
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 10px 45px;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out; }
+  .button_primary {
+    background-color: #1E90FF;
+    border: 1px solid #005db7;
+    color: #ffffff; }
+    .button_primary:hover {
+      background-color: #0071e0; }
+    .button_primary:active {
+      background-color: #005db7; }
+  .button_secondary {
+    background-color: dimgray;
+    border: 1px solid #363636;
+    color: #ffffff; }
+    .button_secondary:hover {
+      background-color: #4a4a4a; }
+    .button_secondary:active {
+      background-color: #363636; }
+  .button_warning {
+    background-color: #FBC531;
+    border: 1px solid #c28f04;
+    color: #ffffff; }
+    .button_warning:hover {
+      background-color: #eaad05; }
+    .button_warning:active {
+      background-color: #c28f04; }
+  .button_danger {
+    background-color: #FF4757;
+    border: 1px solid #e00013;
+    color: #ffffff; }
+    .button_danger:hover {
+      background-color: #ff0a1f; }
+    .button_danger:active {
+      background-color: #e00013; }
+  .button_success {
+    background-color: #2ED573;
+    border: 1px solid #1a8345;
+    color: #ffffff; }
+    .button_success:hover {
+      background-color: #21a557; }
+    .button_success:active {
+      background-color: #1a8345; }
+  .button_info {
+    background-color: #6C5CE7;
+    border: 1px solid #2f1cc1;
+    color: #ffffff; }
+    .button_info:hover {
+      background-color: #3c27df; }
+    .button_info:active {
+      background-color: #2f1cc1; }
+  .button_light {
+    background-color: #F3F3F3;
+    border: 1px solid silver;
+    color: #363636; }
+    .button_light:hover {
+      background-color: #d4d4d4; }
+    .button_light:active {
+      background-color: silver; }
+  .button_dark {
+    background-color: #363636;
+    border: 1px solid #030303;
+    color: #ffffff; }
+    .button_dark:hover {
+      background-color: #171717; }
+    .button_dark:active {
+      background-color: #030303; }
+  .button:focus {
+    outline: 0; }
+
+.button--block {
+  width: 100%;
+  display: block; }
+
+.button--large {
+  padding: 20px 45px; }
+
+.button--rounded {
+  border-radius: 5px; }
+
+.button--oval {
+  border-radius: 30px; }
+
+.btn-green a, .btn-red a, .btn-yellow a, .btn-blue a {
+  color: white !important; }
+
+.btn-basic a {
+  color: #333 !important;
+  text-decoration: none; }
+
+/** 
+ * @Author: Christiane Celeste 
+ * @Date: 2017-10-16
+ */
+.navbar {
+  padding: 0;
+  width: 100%;
+  border: 1px solid #F3F3F3; }
+  .navbar a {
+    color: #363636; }
+  .navbar_light {
+    background-color: #F3F3F3;
+    border: 1px solid silver;
+    color: #363636; }
+    .navbar_light a {
+      color: #363636; }
+  .navbar_dark {
+    background-color: #363636;
+    border: 1px solid #030303;
+    color: #ffffff; }
+    .navbar_dark a {
+      color: #ffffff; }
+  .navbar__logo {
+    text-align: left;
+    display: inline-block; }
+    .navbar__logo img {
+      max-width: 100px;
+      vertical-align: middle; }
+
+/** 
+ * @Author: Christiane Celeste 
+ * @Date: 2017-10-16
+ */
+@media only screen and (min-width: 320px) {
+  .navs {
+    justify-content: center; } }
+
+.navs {
+  margin: 0;
+  padding: 0.275em;
+  display: flex; }
+  .navs li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+    cursor: pointer; }
+    .navs li a {
+      text-decoration: none; }
+  .navs--button li {
+    border-radius: 5px;
+    border: 1px solid #cdcdcd;
+    margin: 0 10px; }
+  .navs--tabs li {
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border-bottom: 2px solid transparent; }
+    .navs--tabs li:hover {
+      border-bottom: 2px solid dimgray;
+      transition-timing-function: ease-in-out;
+      transition: 0.45s; }
+      .navs--tabs li:hover a {
+        color: #838383; }
+
+/** 
+ * @Author: Christiane Celeste 
+ * @Date: 2018-04-10 18:38:32 
+ * @Desc: Images 
+ */
+.image--responsive {
+  max-width: 100%; }
+
+.image--full-width {
+  width: 100%; }
+
+.image--32 {
+  height: 32px;
+  width: 32px; }
+
+.image--64 {
+  height: 64px;
+  width: 64px; }
+
+.image--128 {
+  height: 128px;
+  width: 128px; }
+
+.image--256 {
+  height: 256px;
+  width: 256px; }
+
+.image__thumb {
+  border: 1px solid #ffffff; }
+
+.image__rounded {
+  border-radius: 5px; }
+
+.image__circle {
+  border-radius: 50%; }
+
+footer {
+  width: 100%;
+  background-color: #272A32;
+  color: #ffffff;
+  margin-top: 20px; }
+
+.blocks {
+  padding: 1em;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 5px;
+  margin: 0; }
+
+.blocks--big {
+  padding: 2em;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 5px;
+  margin: 0; }
+
+pre {
+  margin-bottom: 10px;
+  overflow: auto;
+  width: auto;
+  padding: 5px;
+  background-color: #F3F3F3;
+  width: 100%;
+  padding-bottom: 20px;
+  max-height: 600px;
+  white-space: pre-line;
+  word-wrap: break-word; }
+  pre code {
+    background-color: transparent;
+    color: #1E90FF; }
+
+code {
+  background-color: #ffe0e3;
+  color: #e00013;
+  font-size: .95em;
+  padding: 0 4px; }
+
+/** 
+ * @Author: Christiane Celeste 
+ * @Date: 2018-05-17
+ * @Desc:  Tables
+ */
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  color: #363636; }
+  .table .table--head_primary {
+    background-color: #1E90FF;
+    border: 1px solid #005db7;
+    color: #ffffff; }
+    .table .table--head_primary a {
+      color: #ffffff; }
+  .table .table--head_secondary {
+    background-color: dimgray;
+    border: 1px solid #363636;
+    color: #ffffff; }
+    .table .table--head_secondary a {
+      color: #ffffff; }
+  .table .table--head_warning {
+    background-color: #FBC531;
+    border: 1px solid #c28f04;
+    color: #ffffff; }
+    .table .table--head_warning a {
+      color: #ffffff; }
+  .table .table--head_danger {
+    background-color: #FF4757;
+    border: 1px solid #e00013;
+    color: #ffffff; }
+    .table .table--head_danger a {
+      color: #ffffff; }
+  .table .table--head_success {
+    background-color: #2ED573;
+    border: 1px solid #1a8345;
+    color: #ffffff; }
+    .table .table--head_success a {
+      color: #ffffff; }
+  .table .table--head_info {
+    background-color: #6C5CE7;
+    border: 1px solid #2f1cc1;
+    color: #ffffff; }
+    .table .table--head_info a {
+      color: #ffffff; }
+  .table .table--head_light {
+    background-color: #F3F3F3;
+    border: 1px solid silver;
+    color: #363636; }
+    .table .table--head_light a {
+      color: #363636; }
+  .table .table--head_dark {
+    background-color: #363636;
+    border: 1px solid #030303;
+    color: #ffffff; }
+    .table .table--head_dark a {
+      color: #ffffff; }
+  .table .table--head th {
+    border-bottom: 1px solid #363636;
+    border-top: none; }
+  .table .table--body--alternate tr:nth-of-type(2n+0) {
+    background-color: #dadada;
+    border-color: silver; }
+  .table .table--body tr {
+    text-align: center; }
+    .table .table--body tr:hover {
+      background-color: #f2f2f2; }
+
+@media only screen and (min-width: 320px) {
+  .table td, .table th {
+    border-top: none;
+    border-bottom: none;
+    padding: 5px 0px; }
+  .table tr {
+    border: 1px solid #cdcdcd; } }
+
+@media only screen and (min-width: 768px) {
+  .table td, .table th {
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 15px 5px; }
+  .table tr {
+    border: none; } }
+
+.alert {
+  margin: 5px 0;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dadada; }
+  .alert--solid_primary {
+    background-color: #1E90FF;
+    border: 1px solid #005db7;
+    color: #ffffff; }
+    .alert--solid_primary a {
+      color: #ffffff; }
+  .alert--solid_secondary {
+    background-color: dimgray;
+    border: 1px solid #363636;
+    color: #ffffff; }
+    .alert--solid_secondary a {
+      color: #ffffff; }
+  .alert--solid_warning {
+    background-color: #FBC531;
+    border: 1px solid #c28f04;
+    color: #ffffff; }
+    .alert--solid_warning a {
+      color: #ffffff; }
+  .alert--solid_danger {
+    background-color: #FF4757;
+    border: 1px solid #e00013;
+    color: #ffffff; }
+    .alert--solid_danger a {
+      color: #ffffff; }
+  .alert--solid_success {
+    background-color: #2ED573;
+    border: 1px solid #1a8345;
+    color: #ffffff; }
+    .alert--solid_success a {
+      color: #ffffff; }
+  .alert--solid_info {
+    background-color: #6C5CE7;
+    border: 1px solid #2f1cc1;
+    color: #ffffff; }
+    .alert--solid_info a {
+      color: #ffffff; }
+  .alert--solid_light {
+    background-color: #F3F3F3;
+    border: 1px solid silver;
+    color: #363636; }
+    .alert--solid_light a {
+      color: #363636; }
+  .alert--solid_dark {
+    background-color: #363636;
+    border: 1px solid #030303;
+    color: #ffffff; }
+    .alert--solid_dark a {
+      color: #ffffff; }
+
+.card {
+  background-color: #ffffff;
+  margin: 10px 0;
+  font-size: 0.95em;
+  background-color: #ffffff;
+  border: 1px solid #ebebeb; }
+  .card_rounded {
+    border-radius: 5px; }
+  .card--header, .card--body, .card--footer {
+    padding: .75em 1.25em; }
+  .card--header, .card--footer {
+    color: #000000; }
+  .card--header {
+    background-color: #F3F3F3;
+    border-bottom: 1px solid #ebebeb; }
+  .card--body {
+    font-size: 0.975em;
+    line-height: 1.5rem; }
+  .card--footer {
+    border-top: 1px solid #F3F3F3; }

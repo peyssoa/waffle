@@ -1,0 +1,37 @@
+/** 
+ * @Author: Christiane Celeste 
+ * @Date: 2017-10-16
+ */
+
+.navbar{
+	padding: 0;
+	width: 100%;
+	border: 1px solid $concrete;
+	a{color: $mine-shaft;}
+
+	&_light{
+		background-color: $concrete;
+		border: 1px solid darken($concrete, 20%);
+		color: $mine-shaft;
+
+		a{color: $mine-shaft;}
+	}
+
+	&_dark{
+		background-color: $mine-shaft;
+		border: 1px solid darken($mine-shaft, 20%);
+		color: $white;
+
+		a{color:$white;}
+	}
+
+	&__logo{
+		text-align: left;
+		display: inline-block;
+
+		img{
+			max-width: 100px;
+			vertical-align: middle;
+		}
+	}
+}

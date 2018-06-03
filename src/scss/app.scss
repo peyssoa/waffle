@@ -1,0 +1,31 @@
+/** 
+ * @Author: Christiane Celeste 
+ * @Date: 2018-03-30 23:30:08 
+ * @Desc: Main page where all sass files will come together 
+ */
+
+
+@import 'partials/_reset';
+
+// Variables
+@import 'modules/colours';
+@import 'modules/fonts';
+@import 'modules/gradient';
+@import 'modules/borders';
+@import 'modules/box-shadow';
+
+//Partials
+@import 'partials/_base';
+@import 'partials/_grid';
+@import 'partials/_typography';
+@import 'partials/_buttons';
+@import 'partials/_navbar';
+@import 'partials/_navs';
+@import 'partials/_images';
+@import 'partials/_footer';
+@import 'partials/_blocks';
+@import 'partials/_code';
+@import 'partials/_tables';
+@import 'partials/_alerts';
+@import 'partials/_cards';
+@import 'partials/_forms';
