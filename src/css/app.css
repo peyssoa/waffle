@@ -508,7 +508,8 @@ h6 {
 
 p {
   font-size: 1em;
-  margin: 0rem 0 0.95em; }
+  margin: 0rem 0 0.95rem;
+  line-height: 1.45rem; }
 
 ul, ol {
   margin: .5rem 0; }
@@ -521,7 +522,7 @@ ul, ol {
 .button {
   font-weight: 400;
   letter-spacing: 1px;
-  padding: 10px 45px;
+  padding: 10px 15px;
   border-radius: 2px;
   cursor: pointer;
   display: inline-block;
@@ -919,3 +920,42 @@ code {
     line-height: 1.5rem; }
   .card--footer {
     border-top: 1px solid #F3F3F3; }
+
+.form {
+  display: flex;
+  flex-direction: column; }
+  .form_alternate .form--object:nth-of-type(2n+0) {
+    background-color: #F3F3F3;
+    border-color: silver; }
+  .form--inline {
+    flex-direction: row;
+    align-items: flex-end; }
+  .form--horizontal .form--object {
+    display: flex;
+    align-items: center; }
+    .form--horizontal .form--object .label {
+      flex: 1; }
+    .form--horizontal .form--object .field {
+      flex: 3; }
+  .form .explanation {
+    font-size: 0.825em;
+    margin-top: .15rem; }
+  .form .form--object {
+    padding: 1rem; }
+    .form .form--object label {
+      color: #363636;
+      display: block;
+      margin-bottom: .45rem; }
+
+/** 
+ * @Author: Christiane Celeste 
+ * @Date: 2018-06-10 10:04:15 
+ * @Desc: Includes basic inputs and other  form elements
+ */
+.input {
+  width: 100%;
+  border: 1px solid #F3F3F3;
+  padding: .75rem;
+  box-sizing: border-box;
+  border-radius: 3px;
+  color: #363636; }

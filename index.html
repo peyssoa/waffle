@@ -776,31 +776,97 @@
 
 	<!-- @todo: Complete Forms -->
 	<!-- Forms -->
-	<!-- <section class="container">
+	<section class="container">
 		<h1>Forms</h1>
 		
-		<h5>Structure</h5>
-		<p>A card can be created by using the <code>.card</code> class. Any content should be placed into a <code>.card--body</code> class as shown on the divs below:</p>
-		<div class="row">
-			<div class="col col3">
-				<div class="card">
-					<div class="card--body">Sales: 10</div>
+		<h5>Default Form</h5>
+		<form action="#" class="form">
+			 <div class="form--object">
+				 <label for="email">Email</label>
+				 <input type="email" name="email" id="email" class="input" placeholder="Email">
+			 </div>
+			 <div class="form--object">
+				 <label for="password">Password</label>
+				 <input type="password" name="password" id="password"  class="input" placeholder="Password">
+			 </div>
+			 <div class="form--object">
+				 <button class="button button_primary">Submit</button>
+			 </div>
+		</form>
+
+		<h5>Inline Form</h5>
+		<form action="#" class="form form--inline">
+			 <div class="form--object">
+				 <label for="email">Email</label>
+				 <input type="email" name="email" id="email" class="input" placeholder="Email">
+			 </div>
+			 <div class="form--object">
+				 <label for="password">Password</label>
+				 <input type="password" name="password" id="password"  class="input" placeholder="Password">
+			 </div>
+			 <div class="form--object">
+				 <button class="button button_success">Submit</button>
+			 </div>
+		</form>
+
+		<h5>Horizontal Form</h5>
+		<form action="#" class="form form--horizontal">
+			 <div class="form--object">
+				<div class="label"><label for="email">Email</label></div>
+				<div class="field">
+					<input type="email" name="email" id="email" class="input" placeholder="Email">
 				</div>
-			</div>
-			<div class="col col3">
-				<div class="card">
-					<div class="card--body">New Users: 15</div>
-					
+			 </div>
+			 <div class="form--object">
+				 <div class="label"><label for="password">Password</label></div>
+				 <div class="field">
+					 <input type="password" name="password" id="password"  class="input" placeholder="Password">
+				 </div>
+			 </div>
+			 <div class="form--object">
+				 <div class="label">
+					 <label for="chk">Terms</label>
+				 </div>
+				<div class="field">
+					<input type="checkbox" name="chk" id="chk" class="input">
+					<span class="explanation">I agree to the terms and conditions blah blah.</span>
 				</div>
-			</div>
-			<div class="col col3">
-				<div class="card">
-					<div class="card--body">Products Sold: 500</div>
+				
+			 </div>
+			 <div class="form--object">
+				 <button class="button button_success">Submit</button>
+			 </div>
+		</form>
+
+		<h5>Alternating Form</h5>
+		<form action="#" class="form form--horizontal form_alternate">
+			 <div class="form--object">
+				<div class="label"><label for="email">Email</label></div>
+				<div class="field">
+					<input type="email" name="email" id="email" class="input" placeholder="Email">
 				</div>
-			</div>
-		</div>
-		
-	</section> -->
+			 </div>
+			 <div class="form--object">
+				 <div class="label"><label for="password">Password</label></div>
+				 <div class="field">
+					 <input type="password" name="password" id="password"  class="input" placeholder="Password">
+				 </div>
+			 </div>
+			 <div class="form--object">
+				 <div class="label">
+					 <label for="chk">Terms</label>
+				 </div>
+				<div class="field">
+					<input type="checkbox" name="chk" id="chk" class="input">
+					<span class="explanation">I agree to the terms and conditions blah blah.</span>
+				</div>
+				
+			 </div>
+			 <div class="form--object">
+				 <button class="button button_success">Submit</button>
+			 </div>
+		</form>
+	</section>
 
 	<footer>
 		<section class="container">
