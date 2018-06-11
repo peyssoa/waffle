@@ -5,6 +5,8 @@
  */
 
 .input{
+
+
     width: 100%;
     border: 1px solid $concrete;
     padding: .75rem;
@@ -12,4 +14,15 @@
     border-radius: 3px;
     color: $mine-shaft;
 
+}
+
+input[type='checkbox'].input, input[type='radio'].input{
+    width: auto;
+}
+
+textarea.input{
+    max-width: 100%;
+    min-width: 100%;
+    resize:none;
+    height: 150px;
 }

@@ -924,9 +924,10 @@ code {
 .form {
   display: flex;
   flex-direction: column; }
-  .form_alternate .form--object:nth-of-type(2n+0) {
-    background-color: #F3F3F3;
-    border-color: silver; }
+  .form_alternate .form--object {
+    border: 1px solid #F3F3F3; }
+    .form_alternate .form--object:nth-of-type(2n+0) {
+      background-color: #F3F3F3; }
   .form--inline {
     flex-direction: row;
     align-items: flex-end; }
@@ -959,3 +960,12 @@ code {
   box-sizing: border-box;
   border-radius: 3px;
   color: #363636; }
+
+input[type='checkbox'].input, input[type='radio'].input {
+  width: auto; }
+
+textarea.input {
+  max-width: 100%;
+  min-width: 100%;
+  resize: none;
+  height: 150px; }

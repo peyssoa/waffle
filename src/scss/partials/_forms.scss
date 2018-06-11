@@ -4,9 +4,9 @@
 
     &_alternate{
         .form--object{
+            border: 1px solid $concrete;
             &:nth-of-type(2n+0) {
                 background-color: $concrete;
-                border-color: darken($concrete, 20%);
             }
         }
     }
