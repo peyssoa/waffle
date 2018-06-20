@@ -77,6 +77,15 @@
     }
 }
 
+// Coded Border Colour
+@mixin border-component-theme{
+    @each $theme, $colour in $themes {
+        &_#{$theme}{
+            border-left: 3px solid $colour;
+        }
+    }
+}
+
 
 // Adding a background-color using the main colours
 .bg--white{

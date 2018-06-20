@@ -1010,3 +1010,26 @@ textarea.input {
   min-width: 100%;
   resize: none;
   height: 150px; }
+
+.colour--coded {
+  padding: 1.2em;
+  border-right: 1px solid #F3F3F3;
+  border-top: 1px solid #F3F3F3;
+  border-bottom: 1px solid #F3F3F3;
+  box-sizing: border-box; }
+  .colour--coded_primary {
+    border-left: 3px solid #1E90FF; }
+  .colour--coded_secondary {
+    border-left: 3px solid dimgray; }
+  .colour--coded_warning {
+    border-left: 3px solid #FBC531; }
+  .colour--coded_danger {
+    border-left: 3px solid #FF4757; }
+  .colour--coded_success {
+    border-left: 3px solid #2ED573; }
+  .colour--coded_info {
+    border-left: 3px solid #6C5CE7; }
+  .colour--coded_light {
+    border-left: 3px solid #F3F3F3; }
+  .colour--coded_dark {
+    border-left: 3px solid #363636; }

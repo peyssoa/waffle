@@ -1,0 +1,10 @@
+.colour--coded{
+    padding: 1.2em;
+    border-right: 1px solid $concrete;
+    border-top: 1px solid $concrete;
+    border-bottom: 1px solid $concrete;
+    box-sizing: border-box;
+
+    @include border-component-theme;
+
+}
