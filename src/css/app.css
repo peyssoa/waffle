@@ -964,6 +964,47 @@ code {
 input[type='checkbox'].input, input[type='radio'].input {
   width: auto; }
 
+select[multiple].input {
+  padding: 0; }
+  select[multiple].input option {
+    padding: 5px 10px;
+    width: 100%; }
+
+select:not([multiple]).input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  background-color: #ffffff; }
+
+.dropdown {
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+  .dropdown:before {
+    top: 50%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #363636;
+    content: "";
+    position: absolute;
+    left: calc(100% - 30px);
+    transform: translateY(-50%);
+    width: 0;
+    height: 0; }
+  .dropdown:after {
+    top: 45%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ffffff;
+    content: "";
+    position: absolute;
+    left: calc(100% - 30px);
+    transform: translateY(-50%);
+    width: 0;
+    height: 0; }
+
 textarea.input {
   max-width: 100%;
   min-width: 100%;
