@@ -7,6 +7,9 @@
 	padding: 0;
 	width: 100%;
 	border: 1px solid $concrete;
+	z-index: 2;
+	position: relative;
+
 	a{color: $mine-shaft;}
 
 	&_light{

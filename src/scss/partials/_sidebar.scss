@@ -1,3 +1,53 @@
 .sidebar{
-    
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 90px;
+    background-color: $concrete;
+
+    ul{
+        padding: 0;
+
+        li{
+            list-style-type: none;
+            text-align: center;
+            padding: 10px 5px;
+            text-transform: uppercase;
+            border-top: 1px solid darken($color: $concrete, $amount: 10%);
+
+            &:last-child{
+                border-bottom: 1px solid darken($color: $concrete, $amount: 10%);
+            }
+        }
+    }
+}
+
+
+// Media Queries
+@include update-screen(tiny-screens){
+    .sidebar{
+        visibility: hidden;
+    }
+}
+
+@include update-screen(small-screens){
+    .sidebar{
+        visibility: hidden;
+    }
+}
+@include update-screen(medium-screens){
+    .sidebar{
+        visibility: visible;
+        width: 120px;
+    }
+}
+@include update-screen(large-screens){
+
+}
+@include update-screen(wide-screens){
+
 }
